@@ -1,0 +1,102 @@
+body{
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(151, 196, 184, 0.5);
+}
+.container{
+    background-color: rgb(249, 243, 238, 0.6);
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.4);
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    align-items: center;
+    
+}
+
+.container:hover{
+    background-color: rgb(249, 243, 238, 0.9);
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.6);
+}
+
+.form-text{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.form-query{
+    width: 25rem;
+    height: 3rem;
+    border-radius: 15px;
+    padding-left: 1rem ;
+    font-size: medium;
+    background-color: rgb(180, 207, 176, 0.5);
+}
+
+input[type=text]:focus {
+    border: 1px solid #000;
+    background-color: rgb(180, 207, 176, 0.8);
+}
+
+.form-number{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.form-bahasa{
+    width: 12rem;
+    height: 3rem;
+    border-radius: 15px;
+    padding-left: 1rem;
+    font-size: medium;
+    background-color: rgb(180, 207, 176, 0.5);
+}
+
+.number-docs{
+    width: 12rem;
+    height: 3rem;
+    border-radius: 15px;
+    padding-left: 1rem;
+    font-size: medium;
+    background-color: rgb(180, 207, 176, 0.5);
+}
+
+.form-bahasa:focus{
+    border: 1px solid #000;
+    background-color: rgb(180, 207, 176, 0.8);
+}
+
+.form-submit{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-submit{
+    display: flex;
+    justify-content: center;
+    width: 27rem;
+    height: 3rem;
+    border-radius: 15px;
+    padding-left: 1rem;
+    margin-top: 20px;
+    font-size: large;
+    font-weight: bold;
+    background-color: rgb(180, 207, 176, 0.8);
+}
+
+.btn-submit:hover{
+    background-color: rgb(148, 180, 159);
+
+}
+
+img{
+    width: 80%;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+}

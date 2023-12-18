@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Engine</title>
+    <link rel="stylesheet" href="css/homepage.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('form').submit(function(e) {
+                e.preventDefault();
+
+                var formData = $(this).serialize();
+                var url = $(this).attr('action');
+
+                // Redirect to the second page with the search query
+                window.location.href = url + '?' + formData;
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <div>
+                <div class="title">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div>
+                    <form action="search.php" method="get">
+                        <div class="form-text">
+                            <input class="form-query" id="query" name="query" type="text" placeholder="Input Your Query: " required>
+                        </div>
+                        <div class="form-number">
+                            <select id="method" name="method" class="form-bahasa"> 
+                                <option value="cRank" ' . ($method === 'cRank' ? 'selected' : '') . '>C</option>
+                                <option value="swish-e" ' . ($method === 'swish-e' ? 'selected' : '') . '>Swish-e</option>
+                            </select>
+                            <select class="number-docs" id="heapsize" name="heapsize"> 
+                                <option value="10" ' . ($heapsize === '10' ? 'selected' : '') . '>10</option>
+                                <option value="20" ' . ($heapsize === '20' ? 'selected' : '') . '>20</option>
+                                <option value="30" ' . ($heapsize === '30' ? 'selected' : '') . '>30</option>
+                                <option value="40" ' . ($heapsize === '40' ? 'selected' : '') . '>40</option>
+                                <option value="49" ' . ($heapsize === '49' ? 'selected' : '') . '>50</option>
+                            </select>
+                        </div>
+                        <div class="form-submit">
+                            <input type="submit" id="search-btn" class="btn-submit" value="Search">    
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

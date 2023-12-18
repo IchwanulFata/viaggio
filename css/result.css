@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+}
+.head{
+    background-color: rgb(151, 196, 184, 0.3);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.logo {
+    margin-left: 0;
+    width : 15%;
+}
+
+.form{
+    justify-content: space-between;
+    margin-right: 50px;
+    
+}
+
+.query{
+    width: 600px;
+    height: 30px;
+    border-radius: 15px;
+    padding-left: 12px;
+    margin-right: 25px;
+    padding-left: 1rem;
+    background-color: rgb(249, 243, 238, 0.5);
+}
+
+.heapsize, .method{
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+    margin-right: 25px;
+    padding-left: 1rem;
+    background-color: rgb(249, 243, 238, 0.5);
+}
+
+.btn-submit{
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(249, 243, 238, 0.9);
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+}
+
+.submit{
+    padding-right: 3rem;
+}
+
+.search-info{
+    padding: 2rem;
+    padding-left: 15rem;
+    height: 20px;
+    background-color: rgb(151, 196, 184, 0.8);
+    display: flex;
+    justify-content: left;
+    gap: 2rem;
+    font-size: medium;
+}
+
+.search-info p{
+    margin-top: 0;  
+}
+
+.title{
+    margin-top: 3rem;
+}
+
+.doc-title{
+    font-size: xx-large;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 8rem;
+    color: rgb(0, 0, 0);
+}
+
+.doc-title:hover{
+    color: #5F8670;
+}
+
+.doc-score{
+    color: black;
+    margin-left: 10rem;
+    text-decoration: none;
+    font-style: italic;
+}
+
+ul {
+    list-style-type: none;
+}
+  
+input:focus, select:focus {
+    border: 1px solid #000;
+}
+
+.sum-doc{
+    margin-left: 10rem;
+}
+.result{
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    margin: 4rem;
+}
+
+.result:hover{
+    background-color: rgb(0, 0, 0, 0.3);
+}
